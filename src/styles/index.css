@@ -1,0 +1,36 @@
+.content-home{
+    display: flex;
+    background-image: linear-gradient(to bottom right,pink, rgb(199, 231, 247));
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content-home > h1{
+display: flex;
+margin: auto;
+margin-bottom: 20px;
+margin-top: 50px;
+justify-content: center;
+font-size: 60px;
+
+}
+.content-form{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.content-tasks{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.task {
+ text-align: center;
+}
