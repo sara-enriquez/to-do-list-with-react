@@ -6,15 +6,17 @@ const Formulario = (props) => {
   const handleDown = (e) => {
     if (e.keyCode == 13) {
       props.addNewTask(task);
+      console.log(task);
     }
-    console.log(props.taskList);
   };
-  console.log(props.taskList);
-  
+  const handleChange = (e) => {
+    setTask(e.target.value);
+  };
+
   return (
     <input
-      onChange={(e)=> setTask(e.target.value)}
-      className="task"
+      onChange={handleChange}
+      className="input-task"
       type="text"
       placeholder="Escribir nueva tarea"
       onKeyDown={handleDown}
