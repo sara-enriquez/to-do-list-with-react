@@ -1,8 +1,11 @@
 .content-home {
   display: flex;
-  background-image: linear-gradient(to bottom right, pink, rgb(199, 231, 247));
+  background: lightblue;
   min-height: 100vh;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
 }
 
 .content-home > h1 {
@@ -10,7 +13,9 @@
   margin: 50px 0 20px 0;
   justify-content: center;
   font-size: 60px;
+  color: white;
 }
+
 .content-form {
   width: 50%;
   display: flex;
@@ -29,11 +34,56 @@
 
 .input-task {
   text-align: center;
+  width: 100%;
+  background: linear-gradient(to bottom left, rgb(162, 245, 162), pink);
+  border-color: white;
+  color: white;
+}
+
+.input-task:focus {
+  border-color: white;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px pink;
+  outline: 0 none;
 }
 
 .list {
   list-style-type: none;
   padding-inline-start: 0px;
   margin-bottom: 0px;
-  display: list-item
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.liUndone {
+  margin-top: 2px;
+  background: linear-gradient(to bottom right, rgb(162, 245, 162), pink);
+  box-sizing: border-box;
+  border: solid 1px white;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.liDone {
+  margin-top: 2px;
+  background: rgb(162, 245, 162);
+  box-sizing: border-box;
+  border: solid 1px white;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.fa-circle-check, .fa-circle-xmark {
+  float: right;
+  border: none;
+}
+
+.fa-circle-check:hover {
+  color: rgb(93, 214, 93);
+}
+
+.fa-circle-xmark:hover {
+  color: rgb(253, 122, 144);
 }
