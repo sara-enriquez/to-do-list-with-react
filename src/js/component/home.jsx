@@ -5,7 +5,7 @@ const Home = (props) => {
   const [taskList, setTaskList] = useState([]);
   const [deleted, setDeleted] = useState();
   const [taskDone, setTaskDone] = useState(false);
-  
+
   let doneClass = "fa-solid fa-circle-check";
   let undoneClass = "fa-regular fa-circle-check";
 
@@ -52,7 +52,7 @@ const Home = (props) => {
               </li>
             );
           })}
-          <li className={taskList.length ? "liUndone" : "liDone"}>{`${taskList.length} tareas pendientes`}</li>
+          <li className={taskList.length ? "liUndone" : "liDone"}>{taskList.length} {taskList.length ==1 ? "tarea pendiente" : "tareas pendientes"}</li>
         </ul>
       </div>
     </div>
